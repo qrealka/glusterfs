@@ -8055,7 +8055,7 @@ glusterd_op_set_req(rpcsvc_request_t *req)
 }
 
 int32_t
-glusterd_op_clear_op(glusterd_op_t op)
+glusterd_op_clear_op(void)
 {
     opinfo.op = GD_OP_NONE;
 

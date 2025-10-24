@@ -34,7 +34,7 @@ int
 glusterd_shdsvc_start(glusterd_svc_t *svc, int flags);
 
 int
-glusterd_shdsvc_reconfigure();
+glusterd_shdsvc_reconfigure(glusterd_volinfo_t *volinfo);
 
 int
 glusterd_shdsvc_restart();

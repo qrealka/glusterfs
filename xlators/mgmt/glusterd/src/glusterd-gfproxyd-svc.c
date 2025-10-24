@@ -26,7 +26,7 @@ glusterd_gfproxydsvc_build(glusterd_svc_t *svc)
     svc->manager = glusterd_gfproxydsvc_manager;
     svc->start = glusterd_gfproxydsvc_start;
     svc->stop = glusterd_gfproxydsvc_stop;
-    svc->reconfigure = glusterd_gfproxydsvc_reconfigure;
+    svc->reconfigure = (glusterd_svc_reconfigure_t)glusterd_gfproxydsvc_reconfigure;
 }
 
 int

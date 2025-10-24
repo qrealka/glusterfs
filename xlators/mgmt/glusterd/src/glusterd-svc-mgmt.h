@@ -16,6 +16,7 @@
 #include "glusterd-rcu.h"
 
 struct glusterd_svc_;
+typedef struct glusterd_volinfo_ glusterd_volinfo_t;
 
 typedef struct glusterd_svc_ glusterd_svc_t;
 typedef struct glusterd_svc_proc_ glusterd_svc_proc_t;
@@ -26,7 +27,7 @@ typedef int (*glusterd_svc_manager_t)(glusterd_svc_t *svc, void *data,
                                       int flags);
 typedef int (*glusterd_svc_start_t)(glusterd_svc_t *svc, int flags);
 typedef int (*glusterd_svc_stop_t)(glusterd_svc_t *svc, int sig);
-typedef int (*glusterd_svc_reconfigure_t)(void *data);
+typedef int (*glusterd_svc_reconfigure_t)(glusterd_volinfo_t *volinfo);
 
 typedef int (*glusterd_muxsvc_conn_notify_t)(glusterd_svc_proc_t *mux_proc,
                                              rpc_clnt_event_t event);
