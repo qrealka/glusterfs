@@ -40,6 +40,7 @@ log
 *.log
 *.trs
 *_unittest
+compile_commands.json
 
 # Generated files
 site.h
